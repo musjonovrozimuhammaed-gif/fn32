@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int sum = 0, i = 10;
+    
+    while (i <= 30) {
+        sum += i; 
+        i++;     
+    }
+    
+    printf("10 dan 30 gacha bo'lgan sonlar yig'indisi: %d\n", sum);
+    
+    return 0;
+}

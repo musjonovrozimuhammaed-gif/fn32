@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int son, birlik, onlar, teskari_son;
+    
+    printf("Ikki xonali son kiriting: ");
+    scanf("%d", &son);
+    
+    
+    onlar = son / 10;     
+    birlik = son % 10;   
+    
+    
+    teskari_son = birlik * 10 + onlar; 
+    
+    printf("Teskari tartibdagi son: %d\n", teskari_son);
+    
+    return 0;
+}

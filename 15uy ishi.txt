@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main() {
+    double son1, son2, natija;
+    char amal;
+    
+    printf("Birinchi sonni kiriting: ");
+    scanf("%lf", &son1);
+    
+    printf("Amalni kiriting (+, -, *, /): ");
+    scanf(" %c", &amal); 
+    
+    printf("Ikkinchi sonni kiriting: ");
+    scanf("%lf", &son2);
+    
+    switch (amal) {
+        case '+':
+            natija = son1 + son2;
+            printf("Natija: %.2f + %.2f = %.2f\n", son1, son2, natija);
+            break;
+            
+        case '-':
+            natija = son1 - son2;
+            printf("Natija: %.2f - %.2f = %.2f\n", son1, son2, natija);
+            break;
+            
+        case '*':
+            natija = son1 * son2;
+            printf("Natija: %.2f * %.2f = %.2f\n", son1, son2, natija);
+            break;
+            
+        case '/':
+            if (son2 == 0) {
+                printf("Xatolik: Sonni 0 ga bo'lib bo'lmaydi!\n");
+            } else {
+                natija = son1 / son2;
+                printf("Natija: %.2f / %.2f = %.2f\n", son1, son2, natija);
+            }
+            break;
+            
+        default:
+            printf("Xatolik: Noto'g'ri amal belgisi kiritildi!\n");
+            break;
+    }
+    
+    return 0;
+}

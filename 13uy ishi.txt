@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    int tanlov;
+    
+    printf("Tavomni tanlang:\n");
+    printf("1 - Osh\n");
+    printf("2 - Lagmon\n");
+    printf("3 - Manti\n");
+    printf("4 - Shorva\n");
+    printf("5 - Somsa\n");
+    printf("Raqamni kiriting (1-5): ");
+    scanf("%d", &tanlov);
+    
+    switch (tanlov) {
+        case 1:
+            printf("Siz **Osh**ni tanladingiz.\n");
+            break;
+        case 2:
+            printf("Siz **Lagmon**ni tanladingiz.\n");
+            break;
+        case 3:
+            printf("Siz **Manti**ni tanladingiz.\n");
+            break;
+        case 4:
+            printf("Siz **Shorva**ni tanladingiz.\n");
+            break; 
+        case 5:
+            printf("Siz **Somsa**ni tanladingiz.\n");
+            break;
+        default:
+            printf("Noto'g'ri raqam kiritdingiz! Iltimos, 1 dan 4 gacha bo'lgan raqamlardan birini tanlang.\n");
+            break;
+    }
+    
+    return 0;
+}

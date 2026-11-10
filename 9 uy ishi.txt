@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int qoshimcha_pul;
+    int jami_pul = 0;
+    
+    printf("Jamg'arma dasturiga xush kelibsiz! Maqsad: 100 000 so'm.\n");
+    
+    
+    while (jami_pul < 100000) {
+        printf("Qancha pul qo'shdingiz? ");
+        scanf("%d", &qoshimcha_pul);
+        
+        jami_pul += qoshimcha_pul;
+        printf("Hozirgi jami summa: %d so'm\n\n", jami_pul);
+    }
+    
+    printf("Tabriklaymiz! Maqsadga erishildi.\n");
+    printf("Jami yig'ilgan pul: %d so'm\n", jami_pul);
+    
+    return 0;
+}

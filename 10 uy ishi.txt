@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int son;
+    int musbat_sonlar_soni = 0;
+    int manfiy_sonlar_soni = 0;
+    
+    printf("Sonlarni kiriting (to'xtatish uchun 0 kiriting):\n");
+    
+    while (1) {
+        printf("Son kiriting: ");
+        scanf("%d", &son);
+        
+        if (son == 0) {
+            break;
+        }
+        
+        if (son > 0) {
+            musbat_sonlar_soni++;
+        } else if (son < 0) {
+            manfiy_sonlar_soni++;
+        }
+    }
+    
+    printf("Kiritilgan musbat sonlar soni: %d ta\n", musbat_sonlar_soni);
+    printf("Kiritilgan manfiy sonlar soni: %d ta\n", manfiy_sonlar_soni);
+    
+    return 0;
+}

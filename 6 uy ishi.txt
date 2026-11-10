@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int narx = 5000; 
+    
+    printf("Daftar xaridi narxlari (1 tadan 10 tagacha):\n");
+    printf("----------------------------------------\n");
+    
+    
+    int i = 1;
+    while (i <= 10) {
+        int umumiy_narx = i * narx;
+        printf("%d dona daftar: %d so'm\n", i, umumiy_narx);
+        i++;
+    }
+    
+    return 0;
+}

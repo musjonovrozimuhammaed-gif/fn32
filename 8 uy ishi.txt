@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int parol;
+    int togri_parol = 12345;
+    
+    
+    while (1) {
+        printf("Parolni kiriting: ");
+        scanf("%d", &parol);
+        
+        if (parol == togri_parol) {
+            printf("Parol to'g'ri! Xush kelibsiz!\n");
+            break; 
+        } else {
+            printf("Xato parol! Qaytadan urinib ko'ring.\n");
+        }
+    }
+    
+    return 0;
+}
